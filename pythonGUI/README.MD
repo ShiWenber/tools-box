@@ -11,3 +11,7 @@ https://blog.csdn.net/Felaim/article/details/108726908
 
 使用pyqt5的designer能够用图形化的方式进行页面设计，更便捷，可以将业务逻辑代码和ui界面代码分成两个页面
 
+ unable to access 'https://github.com/wenboshicn/a-work-for-python-class.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+ 解决方式：
+ https://blog.csdn.net/weixin_43883666/article/details/114738288
+ 
