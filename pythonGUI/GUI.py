@@ -11,7 +11,7 @@ class HelloWindow(QMainWindow):
         self.setWindowTitle("Hello world")
 
         centralWidget = QWidget(self)
-        self.setCentralWideget(centralWidget)
+        self.setCentralWidget(centralWidget)
 
         gridLayout = QGridLayout(self)
         centralWidget.setLayout(gridLayout)
