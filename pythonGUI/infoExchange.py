@@ -45,8 +45,8 @@ class mainwin(QWidget):
         self.lineEdit.setText(val)#将参数传递给本类lineEdit
         # self.lineEdit.setText(self.ex.lineEdit.text()) #将sub的lineEdit中的内容传递给mainwin本类中的lineEdit中
         print(val)  # 观察控制台可以发现每次改变文本框内的字符都会输出到控制台，可以肯定参数已经通过connect传递给了getValue函数
- 
- 
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     myshow = mainwin()

@@ -40,7 +40,9 @@
 
 
 
-
+# 开发环境
+pyGUI部分使用vscode，在python（microsoft）、qt for python插件环境下开发
+C部分使用vscode，在C/C++ extension(microsoft)插件环境下开发，开发和dll均使用GCC编译器
 
 
 # 小组作业要求
