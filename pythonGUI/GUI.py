@@ -1,8 +1,11 @@
+import helloworld
+
 import ctypes
 import sys
+
 from typing import Literal
 from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget
+from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget, QApplication
 from PyQt5.QtCore import QSize
 # from ctypes import *
 
@@ -42,7 +45,16 @@ class HelloWindow(QMainWindow):
         gridLayout.addWidget(title,0,0)
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
-    mainWin = HelloWindow()
-    mainWin.show()
-    sys.exit(app.exec_())
+    app = QtWidgets.QApplication(sys.argv)   #固定写法，传入参数
+    mainWin = HelloWindow()   # 创建主窗口对象
+    mainWin.show()   # 用ui变量存对象
+    app.exec_()    #  结束app对象
+    ################################
+    
+    app2 = QApplication(sys.argv)  #固定写法，传入参数
+    mainWindow = QMainWindow()   # 创建主窗口对象
+    ui = helloworld.Ui_MainWindow()   # 用ui变量存对象
+    ui.setupUi(mainWindow) # 创建所有组件
+    mainWindow.show()
+    sys.exit(app2.exec_())   # 结束整个程序
+    

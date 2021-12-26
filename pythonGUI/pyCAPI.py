@@ -1,3 +1,5 @@
+# 此项目py调用c的函数统一命名为CF----，和调用的dll中对应的函数同输入同输出
+# 
 from ctypes import *
 
 

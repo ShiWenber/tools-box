@@ -1,4 +1,4 @@
-# pythonGUI
+# pythonGUI学习日志
 通过C语言编译的dll加上python代码实现混合语言编程，用python实现图形界面，调用c来实现函数
 
 ```
@@ -14,4 +14,12 @@ https://blog.csdn.net/Felaim/article/details/108726908
  unable to access 'https://github.com/wenboshicn/a-work-for-python-class.git/': OpenSSL SSL_read: Connection was reset, errno 10054
  解决方式：
  https://blog.csdn.net/weixin_43883666/article/details/114738288
+
+
+
+.ui文件由pyqt5中的designer制作
+.ui文件为.py的输出方式（命令行）：
+`python -m PyQt5.uic.pyuic demo.ui -o demo.py`
+
+ 
  
