@@ -21,5 +21,34 @@ https://blog.csdn.net/Felaim/article/details/108726908
 .ui文件为.py的输出方式（命令行）：
 `python -m PyQt5.uic.pyuic demo.ui -o demo.py`
 
+
+pyqt5 模板：
+```python
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+
+
+
+class MainWindow(QMainWindow):
+    def __init__(self,parent = None):
+        super(MainWindow, self).__init__(parent)
+        self.resize(600, 300)
+        self.status = self.statusBar()
+        self.status.showMessage("这是状态提示", 10000)
+        self.setWindowTitle("MainWindow界面")
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec_())
+```
+
+————————————————
+版权声明：本文为CSDN博主「勤奋的大熊猫」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/u011699626/article/details/113698939
  
  

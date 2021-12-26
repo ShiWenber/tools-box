@@ -5,7 +5,7 @@ import sys
 
 from typing import Literal
 from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget, QApplication
+from PyQt5.QtWidgets import QDialog, QMainWindow, QLabel, QGridLayout, QWidget, QApplication
 from PyQt5.QtCore import QSize
 # from ctypes import *
 
@@ -44,10 +44,14 @@ class HelloWindow(QMainWindow):
         title.setAlignment(QtCore.Qt.AlignCenter)
         gridLayout.addWidget(title,0,0)
 
+
+
+
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)   #固定写法，传入参数
     mainWin = HelloWindow()   # 创建主窗口对象
     mainWin.show()   # 用ui变量存对象
+    
     app.exec_()    #  结束app对象
     ################################
     
