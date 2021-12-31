@@ -1,4 +1,13 @@
 
+tasks:
+  - name: "安装依赖的包"
+    command: |
+      # 更新pip，仅对python适用
+      pip install -U pip
+      # 根据requirements文件来安装python依赖，仅对python适用
+      pip install -r requirements.txt
+      exit
+
 vscode:
   extensions:
     - ms-python.python
