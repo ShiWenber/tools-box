@@ -2,6 +2,7 @@
 tasks:
   - name: "安装依赖的包"
     command: |
+      # 本地环境中直接复制使用
       # 更新pip，仅对python适用
       pip install -U pip
       # 根据requirements文件来安装python依赖，仅对python适用
