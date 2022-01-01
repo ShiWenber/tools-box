@@ -12,4 +12,4 @@ tasks:
 vscode:
   extensions:
     - ms-python.python
-    - mushan.vscode-paste-image
+    - mushan.vscode-paste-image # 更便捷地为markdown插入图片
