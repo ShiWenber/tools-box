@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Selectfileform_ui</class>
- <widget class="QMainWindow" name="Selectfileform_ui">
+ <class>Tran</class>
+ <widget class="QMainWindow" name="Tran">
   <property name="enabled">
    <bool>true</bool>
   </property>

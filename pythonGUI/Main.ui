@@ -20,7 +20,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>280</x>
       <y>10</y>
       <width>171</width>
       <height>31</height>
@@ -50,7 +50,7 @@
      <item>
       <widget class="QPushButton" name="pushButton_2">
        <property name="text">
-        <string>功能2</string>
+        <string>图像转化为txt文本文件</string>
        </property>
       </widget>
      </item>
@@ -73,18 +73,6 @@
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>首页</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_2">
-    <property name="title">
-     <string>帮助</string>
-    </property>
-   </widget>
-   <addaction name="menu"/>
-   <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

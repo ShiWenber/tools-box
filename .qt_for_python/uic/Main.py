@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'helloworld.ui'
+# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\Main.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,27 +14,31 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(784, 600)
+        MainWindow.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(280, 10, 171, 31))
+        self.label.setObjectName("label")
         self.widget = QtWidgets.QWidget(self.centralwidget)
-        self.widget.setGeometry(QtCore.QRect(230, 50, 295, 30))
+        self.widget.setGeometry(QtCore.QRect(270, 80, 191, 341))
         self.widget.setObjectName("widget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
         self.pushButton = QtWidgets.QPushButton(self.widget)
         self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout.addWidget(self.pushButton)
+        self.verticalLayout.addWidget(self.pushButton)
         self.pushButton_2 = QtWidgets.QPushButton(self.widget)
         self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout.addWidget(self.pushButton_2)
+        self.verticalLayout.addWidget(self.pushButton_2)
         self.pushButton_3 = QtWidgets.QPushButton(self.widget)
         self.pushButton_3.setObjectName("pushButton_3")
-        self.horizontalLayout.addWidget(self.pushButton_3)
+        self.verticalLayout.addWidget(self.pushButton_3)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 784, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -47,6 +51,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "Button1"))
-        self.pushButton_2.setText(_translate("MainWindow", "Button2"))
-        self.pushButton_3.setText(_translate("MainWindow", "Button3"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">tools-box欢迎您</span></p></body></html>"))
+        self.pushButton.setText(_translate("MainWindow", "CSV-xlsx格式转换工具"))
+        self.pushButton_2.setText(_translate("MainWindow", "图像转化为txt文本文件"))
+        self.pushButton_3.setText(_translate("MainWindow", "功能3"))

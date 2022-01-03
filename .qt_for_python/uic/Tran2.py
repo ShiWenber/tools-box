@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './pythonGUI/Selectfileform_ui.ui'
+# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\Tran2.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -11,18 +11,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Selectfileform_ui(QtWidgets.QMainWindow):
-     # 为了使类继承父类中的内容
-    def __init__(self):
-        super(Ui_Selectfileform_ui,self).__init__()
-        self.setupUi(self)
-        self.retranslateUi(self)
-    ###########
-    def setupUi(self, Selectfileform_ui):
-        Selectfileform_ui.setObjectName("Selectfileform_ui")
-        Selectfileform_ui.setEnabled(True)
-        Selectfileform_ui.resize(799, 600)
-        self.centralwidget = QtWidgets.QWidget(Selectfileform_ui)
+class Ui_Tran(object):
+    def setupUi(self, Tran):
+        Tran.setObjectName("Tran")
+        Tran.setEnabled(True)
+        Tran.resize(799, 600)
+        self.centralwidget = QtWidgets.QWidget(Tran)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(430, 230, 93, 28))
@@ -35,6 +29,9 @@ class Ui_Selectfileform_ui(QtWidgets.QMainWindow):
         self.lineEdit_2.setEnabled(False)
         self.lineEdit_2.setGeometry(QtCore.QRect(220, 160, 311, 31))
         self.lineEdit_2.setObjectName("lineEdit_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(320, 360, 72, 15))
+        self.label_3.setObjectName("label_3")
         self.widget = QtWidgets.QWidget(self.centralwidget)
         self.widget.setGeometry(QtCore.QRect(90, 60, 107, 151))
         self.widget.setObjectName("widget")
@@ -59,39 +56,30 @@ class Ui_Selectfileform_ui(QtWidgets.QMainWindow):
         self.checkBox_2 = QtWidgets.QCheckBox(self.widget1)
         self.checkBox_2.setObjectName("checkBox_2")
         self.verticalLayout.addWidget(self.checkBox_2)
-        Selectfileform_ui.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(Selectfileform_ui)
+        Tran.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Tran)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 799, 26))
         self.menubar.setObjectName("menubar")
-        Selectfileform_ui.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(Selectfileform_ui)
+        Tran.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Tran)
         self.statusbar.setObjectName("statusbar")
-        Selectfileform_ui.setStatusBar(self.statusbar)
+        Tran.setStatusBar(self.statusbar)
 
-        self.retranslateUi(Selectfileform_ui)
+        self.retranslateUi(Tran)
         self.checkBox.toggled['bool'].connect(self.lineEdit.setEnabled)
         self.checkBox.toggled['bool'].connect(self.lineEdit_2.setEnabled)
         self.checkBox.toggled['bool'].connect(self.checkBox_2.setDisabled)
         self.checkBox_2.toggled['bool'].connect(self.lineEdit.setEnabled)
         self.checkBox_2.toggled['bool'].connect(self.lineEdit_2.setEnabled)
         self.checkBox_2.toggled['bool'].connect(self.checkBox.setDisabled)
-        QtCore.QMetaObject.connectSlotsByName(Selectfileform_ui)
+        QtCore.QMetaObject.connectSlotsByName(Tran)
 
-    def retranslateUi(self, Selectfileform_ui):
+    def retranslateUi(self, Tran):
         _translate = QtCore.QCoreApplication.translate
-        Selectfileform_ui.setWindowTitle(_translate("Selectfileform_ui", "MainWindow"))
-        self.pushButton.setText(_translate("Selectfileform_ui", "转换"))
-        self.label.setText(_translate("Selectfileform_ui", "待转换文件路径"))
-        self.label_2.setText(_translate("Selectfileform_ui", "转换后文件名"))
-        self.checkBox.setText(_translate("Selectfileform_ui", "CSV->xlsx"))
-        self.checkBox_2.setText(_translate("Selectfileform_ui", "xlsx->CSV"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Selectfileform_ui = QtWidgets.QMainWindow()
-    ui = Ui_Selectfileform_ui()
-    ui.setupUi(Selectfileform_ui)
-    Selectfileform_ui.show()
-    sys.exit(app.exec_())
+        Tran.setWindowTitle(_translate("Tran", "MainWindow"))
+        self.pushButton.setText(_translate("Tran", "转换"))
+        self.label_3.setText(_translate("Tran", "TextLabel"))
+        self.label.setText(_translate("Tran", "待转换文件路径"))
+        self.label_2.setText(_translate("Tran", "转换后文件名"))
+        self.checkBox.setText(_translate("Tran", "CSV->xlsx"))
+        self.checkBox_2.setText(_translate("Tran", "xlsx->CSV"))

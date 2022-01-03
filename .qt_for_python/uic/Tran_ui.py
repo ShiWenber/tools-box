@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Tran_ui(object):
     def setupUi(self, Tran_ui):
         Tran_ui.setObjectName("Tran_ui")
-        Tran_ui.resize(792, 600)
+        Tran_ui.resize(792, 602)
         self.centralwidget = QtWidgets.QWidget(Tran_ui)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)

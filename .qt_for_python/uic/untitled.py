@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\untitled.ui'
+# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\untitled.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -19,7 +19,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(290, 10, 171, 31))
+        self.label.setGeometry(QtCore.QRect(280, 10, 171, 31))
         self.label.setObjectName("label")
         self.widget = QtWidgets.QWidget(self.centralwidget)
         self.widget.setGeometry(QtCore.QRect(270, 80, 191, 341))
@@ -40,16 +40,10 @@ class Ui_MainWindow(object):
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 784, 26))
         self.menubar.setObjectName("menubar")
-        self.menu = QtWidgets.QMenu(self.menubar)
-        self.menu.setObjectName("menu")
-        self.menu_2 = QtWidgets.QMenu(self.menubar)
-        self.menu_2.setObjectName("menu_2")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.menubar.addAction(self.menu.menuAction())
-        self.menubar.addAction(self.menu_2.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -59,7 +53,5 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">tools-box欢迎您</span></p></body></html>"))
         self.pushButton.setText(_translate("MainWindow", "CSV-xlsx格式转换工具"))
-        self.pushButton_2.setText(_translate("MainWindow", "功能2"))
+        self.pushButton_2.setText(_translate("MainWindow", "图像转化为txt文本文件"))
         self.pushButton_3.setText(_translate("MainWindow", "功能3"))
-        self.menu.setTitle(_translate("MainWindow", "首页"))
-        self.menu_2.setTitle(_translate("MainWindow", "帮助"))
