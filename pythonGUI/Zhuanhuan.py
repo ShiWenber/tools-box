@@ -67,6 +67,7 @@ class Ui_Zhuanhuan(QtWidgets.QMainWindow):
         self.label.setText(_translate("zhuanhuan", "请输入想要转换的图片的路径"))
         self.pushButton.setText(_translate("zhuanhuan", "转换"))
     
+    # 实现功能
     def zhuanhuan(self):
         name = self.lineEdit.text() #input("Please Input Image File Name:")
         # print("Start")

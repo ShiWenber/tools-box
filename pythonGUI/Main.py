@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Tran import Ui_Tran
 from Zhuanhuan import *
+from Scanbak import *
 
 #############函数所需
 import pandas as pd
@@ -62,6 +63,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         # 链接按钮和窗口
         self.pushButton.clicked.connect(self.tran)
         self.pushButton_2.clicked.connect(self.zhuanhuan)
+        self.pushButton_3.clicked.connect(self.scanbak)
+        
         
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -74,6 +77,9 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def zhuanhuan(self):
         ui_Zhuanhuan.show()
         MainWindow.close()
+    def scanbak(self):
+        ui_Scanbak.show()
+        MainWindow.close()
     
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -81,7 +87,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">tools-box欢迎您</span></p></body></html>"))
         self.pushButton.setText(_translate("MainWindow", "CSV-xlsx格式转换工具"))
         self.pushButton_2.setText(_translate("MainWindow", "图像转化为txt文本文件"))
-        self.pushButton_3.setText(_translate("MainWindow", "功能3"))
+        self.pushButton_3.setText(_translate("MainWindow", "网站敏感目录检测"))
 
 
 if __name__ == "__main__":
@@ -91,6 +97,8 @@ if __name__ == "__main__":
     ui = Ui_MainWindow()
     ui_Tran = Ui_Tran()
     ui_Zhuanhuan = Ui_Zhuanhuan()
+    ui_Scanbak = Ui_Scanbak()
+    
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
