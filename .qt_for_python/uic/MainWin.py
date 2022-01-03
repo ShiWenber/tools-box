@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './pythonGUI/untitled.ui'
+# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\MainWin.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -51,17 +51,9 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menu.menuAction())
         self.menubar.addAction(self.menu_2.menuAction())
 
-        self.pushButton.clicked.connect(self.tran)   #自定义的函数连接到点击按钮
-        
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-
-
-    # 定义功能函数1，转化CSV-xlsx
-    def tran(self):
-        
-    
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -71,13 +63,3 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_translate("MainWindow", "功能3"))
         self.menu.setTitle(_translate("MainWindow", "首页"))
         self.menu_2.setTitle(_translate("MainWindow", "帮助"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
