@@ -20,7 +20,7 @@ https://blog.csdn.net/Felaim/article/details/108726908
 .ui文件由pyqt5中的designer制作
 .ui文件为.py的输出方式（命令行）：
 `python -m PyQt5.uic.pyuic demo.ui -o demo.py`
-
+只会输出类和方法，不会输出主函数只有加上了-x参数才会同时产生主函数
 
 pyqt5 模板：
 ```python
