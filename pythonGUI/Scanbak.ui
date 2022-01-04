@@ -34,14 +34,14 @@
      </rect>
     </property>
     <property name="text">
-     <string>请输入存有url网址的txt文件</string>
+     <string>请输入存有url网址的txt文件地址</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>230</y>
+      <y>420</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -50,30 +50,27 @@
      <string>检测</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_out">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>21</x>
-      <y>168</y>
-      <width>761</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>360</x>
       <y>140</y>
-      <width>151</width>
+      <width>41</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>输出文件的路径</string>
+     <string>输出</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>170</y>
+      <width>761</width>
+      <height>201</height>
+     </rect>
     </property>
    </widget>
   </widget>

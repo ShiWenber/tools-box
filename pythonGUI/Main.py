@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from Tran import Ui_Tran
 from Zhuanhuan import *
 from Scanbak import *
+from TranQR import *
 
 #############函数所需
 import pandas as pd
@@ -48,6 +49,9 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.pushButton_2 = QtWidgets.QPushButton(self.widget)
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout.addWidget(self.pushButton_2)
+        self.pushButton_4 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.verticalLayout.addWidget(self.pushButton_4)
         self.pushButton_3 = QtWidgets.QPushButton(self.widget)
         self.pushButton_3.setObjectName("pushButton_3")
         self.verticalLayout.addWidget(self.pushButton_3)
@@ -64,7 +68,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.pushButton.clicked.connect(self.tran)
         self.pushButton_2.clicked.connect(self.zhuanhuan)
         self.pushButton_3.clicked.connect(self.scanbak)
-        
+        self.pushButton_4.clicked.connect(self.tranQR)
         
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -80,6 +84,9 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def scanbak(self):
         ui_Scanbak.show()
         MainWindow.close()
+    def tranQR(self):
+        ui_TranQR.show()
+        MainWindow.close()
     
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -87,7 +94,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">tools-box欢迎您</span></p></body></html>"))
         self.pushButton.setText(_translate("MainWindow", "CSV-xlsx格式转换工具"))
         self.pushButton_2.setText(_translate("MainWindow", "图像转化为txt文本文件"))
-        self.pushButton_3.setText(_translate("MainWindow", "网站敏感目录检测"))
+        self.pushButton_3.setText(_translate("MainWindow", "网站目录检测/IP端口扫描"))
+        self.pushButton_4.setText(_translate("MainWindow", "字符串生成二维码"))
 
 
 if __name__ == "__main__":
@@ -98,7 +106,7 @@ if __name__ == "__main__":
     ui_Tran = Ui_Tran()
     ui_Zhuanhuan = Ui_Zhuanhuan()
     ui_Scanbak = Ui_Scanbak()
-    
+    ui_TranQR = Ui_TranQR()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

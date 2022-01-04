@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\Scanbak.ui'
+# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\Scanbak - 副本.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #

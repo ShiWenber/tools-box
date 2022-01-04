@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\Scanbak.ui'
+# Form implementation generated from reading ui file 'e:\github\tools-box\tools-box\pythonGUI\Port.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -11,17 +11,17 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Scanbak(object):
-    def setupUi(self, Scanbak):
-        Scanbak.setObjectName("Scanbak")
-        Scanbak.resize(800, 600)
-        self.centralwidget = QtWidgets.QWidget(Scanbak)
+class Ui_Port(object):
+    def setupUi(self, Port):
+        Port.setObjectName("Port")
+        Port.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(Port)
         self.centralwidget.setObjectName("centralwidget")
         self.lineEdit_in = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_in.setGeometry(QtCore.QRect(21, 99, 761, 24))
         self.lineEdit_in.setObjectName("lineEdit_in")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(270, 40, 241, 71))
+        self.label.setGeometry(QtCore.QRect(350, 30, 51, 71))
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(330, 420, 93, 28))
@@ -32,21 +32,21 @@ class Ui_Scanbak(object):
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(23, 170, 761, 201))
         self.textEdit.setObjectName("textEdit")
-        Scanbak.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(Scanbak)
+        Port.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Port)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
         self.menubar.setObjectName("menubar")
-        Scanbak.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(Scanbak)
+        Port.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Port)
         self.statusbar.setObjectName("statusbar")
-        Scanbak.setStatusBar(self.statusbar)
+        Port.setStatusBar(self.statusbar)
 
-        self.retranslateUi(Scanbak)
-        QtCore.QMetaObject.connectSlotsByName(Scanbak)
+        self.retranslateUi(Port)
+        QtCore.QMetaObject.connectSlotsByName(Port)
 
-    def retranslateUi(self, Scanbak):
+    def retranslateUi(self, Port):
         _translate = QtCore.QCoreApplication.translate
-        Scanbak.setWindowTitle(_translate("Scanbak", "MainWindow"))
-        self.label.setText(_translate("Scanbak", "请输入存有url网址的txt文件地址"))
-        self.pushButton.setText(_translate("Scanbak", "检测"))
-        self.label_2.setText(_translate("Scanbak", "输出"))
+        Port.setWindowTitle(_translate("Port", "MainWindow"))
+        self.label.setText(_translate("Port", "目标IP"))
+        self.pushButton.setText(_translate("Port", "扫描"))
+        self.label_2.setText(_translate("Port", "输出"))
