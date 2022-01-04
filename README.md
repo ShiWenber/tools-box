@@ -1,5 +1,7 @@
 # 使用说明
 
+源代码的主函数在pythonGUI的Main.py中
+
 ## 功能介绍
 
 tools-box整合了CSV-xlsx文件格式转换、图片转txt字符画、字符串生成二维码图片、URL网址目录检测/IP扫描四个部分的功能。

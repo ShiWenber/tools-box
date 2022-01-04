@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Port(object):
     def setupUi(self, Port):
         Port.setObjectName("Port")
-        Port.resize(800, 600)
+        Port.resize(800, 591)
         self.centralwidget = QtWidgets.QWidget(Port)
         self.centralwidget.setObjectName("centralwidget")
         self.lineEdit_in = QtWidgets.QLineEdit(self.centralwidget)
