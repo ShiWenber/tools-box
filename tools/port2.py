@@ -1,5 +1,4 @@
-# #date：2021/12/30
-#作者：云南大学 kento
+# coding:utf-8
 
 import socket
 
@@ -8,12 +7,11 @@ from datetime import datetime
 from multiprocessing.dummy import Pool as ThreadPool
 
 # 目标IP
-remote_server_ip = "xx.xx.xxx.xx"
+remote_server_ip = "47.99.142.216"
 # 目标ip启用端口
 ports = []
 # 设置连接超时为0.5s，在校园网中使用时可以适当延长时间
 socket.setdefaulttimeout(0.5)
-
 
 # 端口扫描
 def scan_port(port):
